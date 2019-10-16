@@ -1,0 +1,497 @@
+/* Global */
+
+body{
+    font-family:Arial, Helvita, sans-serif;
+    font-size:15px;
+    line-height:1.5;
+    padding: 0;
+    margin: 0;
+    background-color: #333333;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul{
+    margin:0;
+    padding: 0;
+}
+
+/* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}  
+
+
+h3{
+color:#e60000;
+text-decoration: underline;
+font-size: 20px;
+}
+            
+
+
+
+
+/*Header */
+
+header {
+    background: #333333;
+    color:white;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #e60000 4 solid;
+}
+header .theblock, header .theblock2{
+    display: inline;
+}
+header h1{
+    font-size:34px;
+    font-weight: bold;
+}
+
+header a{
+    color:white;
+    text-decoration:none;
+    text-transform: uppercase;
+    font-size:16px;
+}
+
+header a:hover{
+    color:#666699;
+    font-weight: bold;
+}
+
+header .highlight_a2 a:hover{
+    color:#666699;
+    font-weight: bold;
+} 
+
+
+header li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+    
+    
+}
+
+header nav{
+    float:right;
+    margin-top: 10px;
+}
+
+header .brand_name{
+    float:left
+}
+
+header .brand_name h1{
+    margin:0
+}
+
+header .highlight_a1, header .highlight_a2 a{
+    color:#e60000;
+    font-weight: bold;
+}
+
+/* Showcase */
+
+.showcase{
+    min-height: 400px;
+    background-image:url(img/artificial-intelligence-blur-close-up-546819.jpg) ;
+}
+.showcase h1{
+    margin-top:100px;
+    margin-left:20px;
+    font-size:55px;
+    color:white;
+}
+
+.showcase p{
+    font-size:20px;
+    float:left;
+    margin-right: 370px;
+    color:white;
+}
+
+/* Sub */
+
+.sub{
+    text-align: center;
+    padding: 15px;
+    background-color:#52527a;
+    border-bottom:#e60000 4px  solid;
+    border-top:#e60000 4px solid;
+}
+
+.sub h1{
+    color:white;
+    float: left;
+}
+
+section .highlight_a3{
+    color:#e60000;  
+}
+
+.sub form{
+    float:right;
+    margin-top: 15px;
+}
+
+.sub input[type="email"]{
+    padding: 4px;
+    height:25px;
+    width:250px ;
+}
+
+.button_1{
+    height:38px;
+    background-color: #ff3300;
+    border:0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+}
+
+/*Boxes */
+
+.infoboxes{
+    margin-top:20px;
+}
+
+.infoboxes .box{
+    float:left;
+    text-align: center;
+    width: 30%;
+    padding: 15px;
+    color:white;
+}
+
+.infoboxes a{
+    color:#e60000;
+    text-transform: uppercase;
+    font-size:16px;
+}
+.infoboxes a:hover{
+    color:#666699;
+    font-weight: bold;        
+    }
+
+.infoboxes .box img{
+    width:140px;
+}
+
+/*Sidebar*/
+
+aside .sidebar{
+    float:right;
+    width: 30%;
+    margin-top: 10px;
+    border: #e60000 4px  solid;
+    
+}
+
+aside .sidebr{
+    background-color: antiquewhite
+}
+
+aside h3{
+    color:#e60000;
+    font-size: 1.5em;
+    text-transform:capitalize;
+}
+
+/*Main-Col */
+
+article .maincol{
+    float:left;
+    width:65%
+}
+
+/*Footholder */
+
+footer {
+    padding: 20px;
+    margin-top: 20px;
+    color:white;
+    text-align: center;
+    border-top:#e60000 4px solid;
+    background-color: #52527a;
+}
+
+/* About */
+
+article h1{
+    color:#e60000;
+    font-size: 1.5em;
+    text-transform:capitalize;
+}
+
+article .p_1{
+    color:white;
+    font-weight: bold
+}
+
+
+/* Sidebar */
+aside.sidebar{
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+    padding: 15px;
+     
+}
+
+/* Main Col */
+article.main-col{
+    float:left;
+    width: 60%;
+    padding: 15px;
+    
+}
+
+.bar .what_we_do{
+    text-decoration:none;
+}
+
+/* Services */
+
+/*Services_info */
+
+.newservices{
+    background: #333333;
+    text-align: center;
+    color:black;
+}
+.newservices h1{
+    display: inline-block;
+    text-transform: uppercase;
+    border-bottom: 4px solid #e60000;
+    font-size: 20px;
+    padding-bottom: 10px;
+    margin-top: 40px;
+}
+.newcen{
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+}
+.newservice{
+    display: inline-block;
+    width: calc(100% / 3);
+    margin: 0 -2px;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 0.1px dashed lightgray;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.newservice:hover{
+    background: #ddd;
+}
+.newservice i{
+    color: #e60000;
+    font-size: 34px;
+    margin-bottom: 30px;
+}
+.newservice h2{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 0;
+}
+.newservice p{
+    color: gray;
+    font-size: 15px;
+    font-weight: 500;
+}
+    
+/* Contacts */
+
+.contacs_back{
+    font-style:bold;
+}
+
+.serv{
+    color:white;
+    background-image:url(img/4k-wallpaper-architecture-background-1308624.jpg);
+    background-position: center;    
+    background-size: cover; 
+    padding-bottom: 50px;
+    
+}
+
+.the_ps{
+    margin-top: 75px;
+    margin-bottom: 10px;
+    
+    
+}
+
+.serv h1{
+    font-size:30px;
+    margin-top: 45px;
+    color:#e60000
+}
+
+/* Scroll Up Button */
+
+.scrollup{
+    position:fixed;
+    width: 50px;
+    height:50px;
+    background: #e60000;
+    bottom:40px;
+    right: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color:white;
+    font-size:22px;
+    
+}
+    
+
+
+@media(max-width: 768px){
+    header .brand_name,
+    header nav,
+    header nav li,
+    .sub h1,
+    .sub form,
+    .infoboxes .box,
+    article.main-col,
+    aside.sidebar{
+        float:none;
+        text-align:center;
+        width:100%;
+        }
+    .pp{
+        margin-right: 20px;
+    }
+    
+    header{
+        padding-bottom:20px;
+        }
+
+    .showcase .text_p_index{
+        text-align: center ;
+        margin-right: 0px;  
+        float:right;
+        }
+    
+    
+    .showcase h1{
+        text-align: center;
+        align-content: center;
+        display: block;
+        }
+
+    .sub button{
+        display:block;
+        width:100%;
+        }
+
+    .sub form input[type="email"], .quote input, .quote textarea{
+        width:100%;
+        margin-bottom:5px;
+        }
+    
+    .service_boxes{
+        margin-bottom: 20px;
+    }
+    
+    .scrollup{
+        float:right;
+        width: 30px;
+        height:30px;
+        background: #e60000;
+        bottom:20px;
+        right: 30px;
+        text-decoration: none;
+        text-align: center;
+        line-height: 30px;
+        color:white;
+        font-size:18px;
+    }
+}
+
+@media(max-width:769px){
+    aside.sidebar{
+        display:none;
+}
+    
+@media(max-width: 560px){
+    header .theblock, .header .theblock2{
+        display:block;
+        
+    }
+    }
+    
+@media screen and (max-width: 800px) {
+  .newservice{
+    width: 50%;
+  }
+}
+    
+@media screen and (max-width: 500px) {
+  .newservice{
+    width: 100%;
+  }
+}
+
+}
